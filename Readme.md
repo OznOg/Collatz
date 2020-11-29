@@ -50,5 +50,8 @@ As the carry is propagated, on s, the number 2^n -1 +1 become 2^n, thus and extr
 
 One can see that this can be generalized to any number with trailing 1, that is why when a number appears with some kind of tail containing only 1, its tails seems to reduce at each step, until it reaches 0.
 
+One may also notice that the tail srictly always reduce its size because a 0 is always injected between the 2^n result and the (2^n - 1)>> 1 which is alway < 2^(n-1)
+
+At the same time, the value of s increases by half its size (obviously...), that's why those numbers see their value growing very fast when those 1-tails appears during cmputation (that is what happens to 63, for example, why has 4 1-tails appearing during computation making values "bounce" and eventually reach 4616)
 
 
